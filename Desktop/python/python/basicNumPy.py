@@ -23,6 +23,9 @@ X = np.matrix([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
 #print X
 #print X[:,1:3]
 
+# i have added this line
+
+
 Y = np.array([2,1,3,2,5,4,2,1,2,3])
 #print len(Y)
 #print Y.shape
