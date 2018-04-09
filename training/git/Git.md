@@ -33,6 +33,8 @@ git clone git@git.bid.in.telstra.com.au:districts/nbnplus.git
 git --version
 ```
 
+I have donloaded the Microsft visual Editor
+
 set editor for git
 `git config --global core.editor C:/prog/git/npp.sh`
 
