@@ -1,0 +1,35 @@
+We need to create a proper project structure.
+
+Always it will be in reverse order of company domain i.e. (com.infosys etc...)
+
+Ex: Create a folder structure as 
+	src/main/scala/com.infy.in.si/cli  (Arguments)
+	src/main/scala/com.infy.in.si/common (Common Code/Re-usable)
+	src/main/scala/com.infy.in.si/code (Actual Code)
+	
+	//ly 
+	
+	src/test/scala/
+	
+
+There will be a target folder structure which will have the jar that is generated.
+
+	target/scala-2.11/
+
+package will generate an individual jar for the main program.
+assembly will create a single fat jar which includes all the dependencies.
+
+We also have build.sbt in target folder which has details of all the jars that needs to be included.
+We can know the verions of the jars compatible to scala version which we use from mvn repos.
+
+ex: https://mvnrepository.com/artifact/com.github.scopt/scopt_2.10/2.1.0
+
+By-default when proj is created it will create build.properties with sbt version used
+
+sbt.version = 0.13.15
+
+Path:  /<Proj Name>/target/build.properties
+
+plugins.sbt will include the sbt plugin details and the jars to exclude.
+
+Path:  /<Proj Name>/target/plugins.sbt
